@@ -25,6 +25,7 @@ alias prune_local_branches="bash $SCRIPT_DIR/prune_local_branches.sh"
 
 
 # OS sepcifc
+# Todo: remove OS specific commands (e.g. remove darwin and linux from build dirs)
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Running on macOS"
     alias genxcode="cmake . -B ../build_xcode/ -G 'Xcode'"
@@ -47,5 +48,4 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     echo "Running on Linux"
     # Todo: when back on linux
-    # Todo: remove OS specific commands (e.g. remove darwin and linux from build dirs)
 fi

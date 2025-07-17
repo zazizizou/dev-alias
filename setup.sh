@@ -25,7 +25,7 @@ alias prune_local_branches="bash $SCRIPT_DIR/prune_local_branches.sh"
 
 
 # OS sepcifc
-# Todo: remove OS specific commands (e.g. remove darwin and linux from build dirs)
+# Todo: remove OS specific commands (e.g. remove "darwin" and "linux" from build dirs)
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Running on macOS"
     alias genxcode="cmake . -B ../build_xcode/ -G 'Xcode'"
@@ -36,7 +36,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	alias bx3="$HOME/blender-git/build_xcode_3/bin/Debug/Blender.app/Contents/MacOS/Blender"
 	alias bx4="$HOME/blender-git/build_xcode_4/bin/Debug/Blender.app/Contents/MacOS/Blender"
 	alias b="$HOME/blender-git/build_darwin/bin/Blender.app/Contents/MacOS/Blender"
+	alias bd="$HOME/blender-git/build_darwin_debug/bin/Blender.app/Contents/MacOS/Blender"
 	alias b2="$HOME/blender-git/build_darwin_2/bin/Blender.app/Contents/MacOS/Blender"
+	alias bd2="$HOME/blender-git/build_darwin_debug_2/bin/Blender.app/Contents/MacOS/Blender"
 	alias b3="$HOME/blender-git/build_darwin_3/bin/Blender.app/Contents/MacOS/Blender"
 	alias b4="$HOME/blender-git/build_darwin_4/bin/Blender.app/Contents/MacOS/Blender"
 	alias br="$HOME/blender-git/build_darwin_review/bin/Blender.app/Contents/MacOS/Blender"
